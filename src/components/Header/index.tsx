@@ -4,6 +4,7 @@ import { useState } from "react";
 import { IoClose } from "react-icons/io5";
 import Link from "next/link";
 import { MenuItem } from "@/interfaces/menuItem";
+import Image from 'next/image'
 
 export function Header() {
   
@@ -44,11 +45,16 @@ export function Header() {
 
       <div className="flex items-center justify-between pl-4 pr-8 pb-2">
         <Link href="/">
-          <img
+          <div className="h-16 md:h-18 w-44">
+          <Image
             src="/assets/images/logo-territorios-esperanca.png"
-            alt="Logo da Sala do Empreendedor de Acopiara"
-            className="h-16 md:h-18"
-          />
+            width={20}
+            height={20}
+            layout="responsive"
+            alt="Picture of the author"
+          />  
+
+          </div>
         </Link>
         <button onClick={onClickOpenMenu} className="lg:hidden">
           {!openMenu ? <GiHamburgerMenu size={35} /> : <IoClose size={35} />}
