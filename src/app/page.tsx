@@ -1,3 +1,4 @@
+import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Proposta } from "@/components/Proposta";
 import { SiteSalas } from "@/components/SitesSalas";
@@ -11,6 +12,7 @@ export default function Home() {
       <Proposta />
 
         <SiteSalas />
+        <Footer />
       </main>
     </>
   );
