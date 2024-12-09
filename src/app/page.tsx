@@ -1,7 +1,6 @@
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Proposta } from "@/components/Proposta";
-import { SiteSalas } from "@/components/SitesSalas";
 
 export default function Home() {
   return (
@@ -10,8 +9,8 @@ export default function Home() {
       <main>
       {/* <hr className="w-full mt-28 border border-blue-500" /> */}
       <Proposta />
-
-        <SiteSalas />
+      {/* <Abrangencia /> */}
+        {/* <SiteSalas /> */}
         <Footer />
       </main>
     </>
