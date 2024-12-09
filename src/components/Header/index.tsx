@@ -12,18 +12,29 @@ export function Header() {
 
   const itensMenu: MenuItem[] = [
     {
-      text: "Proposta",
-      id: "/#home",
+      text: "Sobre",
+      id: "/#",
     },
     {
-      text: "O que queremos",
+      text: "Meta",
       id: "/#services",
+      link: 'meta'
     },
     {
-      text: "Sites das Salas do Empreendedor",
+      text: "Abrangência",
       id: "#premiacoes",
+      link: 'abrangencia'
     },
-    
+    {
+      text: "Agentes de Desenvolvimento",
+      id: "#premiacoes",
+      link: 'agentes-desenvolvimento'
+    },
+    {
+      text: "Conteúdos  ",
+      id: "#premiacoes",
+      link: 'conteudos'
+    },
   ];
 
   function onClickOpenMenu() {
@@ -38,8 +49,8 @@ export function Header() {
     <header
   className={
     openMenu
-      ? "flex-col h-[100vh] items-center justify-center bg-white fixed top-0 left-0 right-0 z-50 shadow-md lg:flex lg:flex-row lg:justify-between"
-      : "flex-col items-center justify-center bg-white fixed top-0 left-0 right-0 z-50 shadow-md lg:flex lg:flex-row lg:justify-between lg:pr-24 lg:pl-10 2xl:pr-44"
+      ? "flex-col h-[100vh] items-center justify-center bg-green-50 fixed top-0 left-0 right-0 z-50 shadow-md lg:flex lg:flex-row lg:justify-between"
+      : "flex-col items-center justify-center bg-green-50 fixed top-0 left-0 right-0 z-50 shadow-md lg:flex lg:flex-row lg:justify-between lg:pr-24 lg:pl-10 2xl:pr-44"
   }
 >
 
