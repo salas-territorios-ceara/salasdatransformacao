@@ -9,9 +9,9 @@ export default function Meta() {
 
             <Header />
 
-            <section className=" flex flex-col md:flex-row min-h-screen px-6  lg:mp-16 mt-2 8 bg-white bg-no-repeat bg-cover justify-start items-center gap-10">
+            <section className=" flex flex-col mt-32 md:flex-row min-h-screen px-6  lg:mp-16 mt-2 bg-white bg-no-repeat bg-cover justify-start items-center gap-10">
 
-                <div className="flex flex-col justify-center items-center w-[80%] ml-16">
+                <div className="flex flex-col justify-center items-center w-[100%] md:w-[80%] md:ml-16">
 
                     <h2 className="text-[#007b58] text-4xl font-extrabold rounded-md">Meta</h2>
                     <p className="text-xl mt-4 text-black ">
